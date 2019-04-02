@@ -1,4 +1,4 @@
-stress<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -12,16 +12,49 @@ stress<!DOCTYPE html>
     <div class="container">
       <form id="stressTest">
         <h1>Check all that applies to you:</h1>
-
-        <p>Warning signs of being negatively affected by stress</p>
-        <input type="checkbox" name="stress" value="sleep">Loss of sleep.<br>
-        <input type="checkbox" name="stress" value="overwhelmed">Feeling overhelmed.<br>
-        <input type="checkbox" name="stress" value="acne">Acne.<br>
-        <input type="checkbox" name="stress" value="headache">Headaches.<br>
-        <input type="checkbox" name="stress" value="appetite">Appetite changes.<br>
+        <div  id="stress" class="form-group">
+          <p>Warning signs of being negatively affected by stress:</p>
+          <input type="checkbox" name="stress" value="sleep">Loss of sleep.<br>
+          <input type="checkbox" name="stress" value="overwhelmed">Feeling overhelmed.<br>
+          <input type="checkbox" name="stress" value="acne">Acne.<br>
+          <input type="checkbox" name="stress" value="headache">Headaches.<br>
+          <input type="checkbox" name="stress" value="appetite">Appetite changes.<br>
+        </div>
+        <div  id="symptoms" class="form-group">
+          <p>Health symptoms that linked to high-stress:</p>
+          <input type="checkbox" name="symptoms" value="blood">High blood pressure.<br>
+          <input type="checkbox" name="symptoms" value="anxiety">Anxiety.<br>
+          <input type="checkbox" name="symptoms" value="pain">Chronic pain.<br>
+          <input type="checkbox" name="symptoms" value="sickness">Frequent sickness.<br>
+          <input type="checkbox" name="symptoms" value="depression">Depression.<br>
+        </div>
+        <div  id="cope" class="form-group">
+          <p>How do you cope with stress?</p>
+          <input type="checkbox" name="cope" value="meditate">Meditate.<br>
+          <input type="checkbox" name="cope" value="time">Manage your time.<br>
+          <input type="checkbox" name="cope" value="cat">Pet a cat.<br>
+          <input type="checkbox" name="cope" value="routine">Maintain a normal routine.<br>
+          <input type="checkbox" name="cope" value="connect">Connect with others.<br>
+        </div>
 
         <button type="submit" >Result</button>
       </form>
+
+      <div>
+        <div class="response" id="first-response">
+          <p><b>You seem to be negatively affected by stress. Please see this webpage for resources to help you cope with stress.</b></p>
+        </div>
+
+        <div class="response" id="second-response">
+          <p><b>You seem to be affected by stress a little bit. You are already using good coping methods, here are some more that might help you.</b></p>
+        </div>
+
+        <span class="response" id="third-response">
+          <p><b>You seem to be coping with stress very well. Keep up the good work!</b></p>
+        </span>
+      </div>
+
+
     </div>
 
 
